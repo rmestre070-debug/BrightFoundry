@@ -1,0 +1,134 @@
+/* ------------------------------
+   Global Reset
+------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background: #fafafa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ------------------------------
+   Header
+------------------------------ */
+.bf-header {
+    padding: 1.5rem 2rem;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.bf-header .logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+}
+
+/* ------------------------------
+   Hero Section
+------------------------------ */
+.bf-hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bf-hero h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.bf-hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #444;
+}
+
+.bf-cta {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    background: #4a6cf7;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.bf-cta:hover {
+    background: #3d5be0;
+}
+
+/* ------------------------------
+   Modules Section
+------------------------------ */
+.bf-modules {
+    padding: 3rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.bf-modules h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.module-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #222;
+    border: 1px solid #e5e5e5;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.module-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.module-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.module-card p {
+    color: #555;
+}
+
+/* ------------------------------
+   Footer
+------------------------------ */
+.bf-footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    background: #f0f0f0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.bf-footer a {
+    color: #4a6cf7;
+    text-decoration: none;
+}
+
+.bf-footer a:hover {
+    text-decoration: underline;
+}
