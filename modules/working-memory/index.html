@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working Memory — BrightFoundry</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <header class="module-header">
+        <h1>Working Memory</h1>
+        <a class="home-btn" href="../../index.html">← Home</a>
+        <p>Hold and manipulate information with precision.</p>
+    </header>
+
+    <main class="module-container">
+
+        <div class="memory-box">
+            <h2>Memorize This</h2>
+            <p id="memory-display">Loading...</p>
+        </div>
+
+        <div class="input-area hidden" id="input-area">
+            <label for="user-answer">Enter what you remember:</label>
+            <input type="text" id="user-answer" placeholder="Type here" />
+            <button id="submit-btn">Submit</button>
+        </div>
+
+        <p id="feedback"></p>
+
+        <div id="reflection-box" class="reflection hidden">
+            <h3>Reflection</h3>
+            <p></p>
+        </div>
+
+        <button id="next-btn" class="hidden">Next Challenge</button>
+
+    </main>
+
+    <script src="logic.js"></script>
+</body>
+</html>
