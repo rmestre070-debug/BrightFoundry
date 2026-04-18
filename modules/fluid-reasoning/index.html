@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fluid Reasoning — BrightFoundry</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <header class="module-header">
+        <h1>Fluid Reasoning</h1>
+        <a class="home-btn" href="../../index.html">← Home</a>
+        <p>Solve novel problems using logic and abstraction.</p>
+    </header>
+
+    <main class="module-container">
+
+        <div class="puzzle-box">
+            <h2>Reason Through the Puzzle</h2>
+            <p id="puzzle-display">Loading...</p>
+        </div>
+
+        <div class="input-area">
+            <label for="user-answer">Your answer:</label>
+            <input type="text" id="user-answer" placeholder="Enter your answer" />
+            <button id="submit-btn">Submit</button>
+        </div>
+
+        <p id="feedback"></p>
+
+        <div id="reflection-box" class="reflection hidden">
+            <h3>Reflection</h3>
+            <p></p>
+        </div>
+
+        <button id="next-btn" class="hidden">Next Puzzle</button>
+
+    </main>
+
+    <script src="logic.js"></script>
+</body>
+</html>
