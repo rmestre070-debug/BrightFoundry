@@ -15,6 +15,39 @@ body {
 }
 
 /* ------------------------------
+   Global Navigation Bar
+------------------------------ */
+.bf-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+}
+
+.bf-nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #4a6cf7;
+    font-weight: 600;
+}
+
+.bf-nav a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------
    Header
 ------------------------------ */
 .bf-header {
@@ -110,6 +143,31 @@ body {
 
 .module-card p {
     color: #555;
+}
+
+/* ------------------------------
+   Contact Section
+------------------------------ */
+.bf-contact {
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bf-contact h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.bf-contact a {
+    color: #4a6cf7;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.bf-contact a:hover {
+    text-decoration: underline;
 }
 
 /* ------------------------------
