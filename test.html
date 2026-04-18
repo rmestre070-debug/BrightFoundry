@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightFoundry - Cognitive Training</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .challenge { margin: 20px; padding: 20px; border: 1px solid #ccc; }
+        .feedback { color: green; }
+        .reflection { font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="challenge">
+        <h1>Challenge</h1>
+        <p id="challengeText"></p>
+        <p class="feedback" id="feedbackText"></p>
+        <p class="reflection" id="reflectionText"></p>
+    </div>
+    <script>
+        function generateChallenge(module) {
+            const challenges = {
+                "Pattern Induction": { "challenge": "What comes next in the pattern: 2, 4, 6, ?", "correct_answer": "8", "feedback": "Great job!", "reflection": "How did you identify the pattern?", "metadata": { "module": "Pattern Induction", "difficulty": "Medium", "type": "sequence" } },
+                "Fluid Reasoning": { "challenge": "If a cat is to kittens, then a dog is to ?", "correct_answer": "puppies", "feedback": "Nice work!", "reflection": "What led to your conclusion?", "metadata": { "module": "Fluid Reasoning", "difficulty": "Medium", "type": "puzzle" } }
+                // Add more modules as needed
+            };
+            return challenges[module];
+        }
+
+        const challenge = generateChallenge("Pattern Induction");
+        document.getElementById('challengeText').innerText = challenge.challenge;
+        document.getElementById('feedbackText').innerText = challenge.feedback;
+        document.getElementById('reflectionText').innerText = challenge.reflection;
+    </script>
+</body>
+</html>
