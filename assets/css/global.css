@@ -36,8 +36,14 @@ body {
     text-decoration: none;
 }
 
+/* Right side links */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
 .bf-nav a {
-    margin-left: 1.5rem;
     text-decoration: none;
     color: #4a6cf7;
     font-weight: 600;
@@ -45,6 +51,49 @@ body {
 
 .bf-nav a:hover {
     text-decoration: underline;
+}
+
+/* ------------------------------
+   Dropdown Menu
+------------------------------ */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    color: #4a6cf7;
+    font-weight: 600;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 2.4rem;
+    left: 0;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    min-width: 200px;
+    display: none;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.6rem 1rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.dropdown-menu a:hover {
+    background: #eef3ff;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 /* ------------------------------
@@ -180,13 +229,4 @@ body {
     background: #f0f0f0;
     color: #555;
     font-size: 0.9rem;
-}
-
-.bf-footer a {
-    color: #4a6cf7;
-    text-decoration: none;
-}
-
-.bf-footer a:hover {
-    text-decoration: underline;
 }
