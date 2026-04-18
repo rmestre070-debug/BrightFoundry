@@ -1,0 +1,139 @@
+/* ------------------------------
+   Global
+------------------------------ */
+body {
+    font-family: system-ui, sans-serif;
+    background: #fafafa;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------
+   Header
+------------------------------ */
+.module-header {
+    text-align: center;
+    padding: 2rem;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.module-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Home Button */
+.home-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #4a6cf7;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.home-btn:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------
+   Main Container
+------------------------------ */
+.module-container {
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* ------------------------------
+   Spatial Display
+------------------------------ */
+.spatial-box {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.spatial-box h2 {
+    margin-bottom: 1rem;
+}
+
+#spatial-display {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    white-space: pre-line;
+}
+
+/* ------------------------------
+   Options Grid
+------------------------------ */
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.option-btn {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.2s ease, transform 0.1s ease;
+    white-space: pre-line;
+}
+
+.option-btn:hover {
+    background: #eef3ff;
+    transform: translateY(-2px);
+}
+
+/* ------------------------------
+   Feedback
+------------------------------ */
+#feedback {
+    margin-top: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ------------------------------
+   Reflection Box
+------------------------------ */
+.reflection {
+    background: #eef3ff;
+    border-left: 4px solid #4a6cf7;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+}
+
+.reflection h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* ------------------------------
+   Responsive
+------------------------------ */
+@media (max-width: 480px) {
+    .module-container {
+        padding: 0.5rem;
+    }
+
+    #spatial-display {
+        font-size: 1.6rem;
+    }
+
+    .option-btn {
+        font-size: 1.4rem;
+    }
+}
