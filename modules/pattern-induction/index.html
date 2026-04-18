@@ -10,31 +10,76 @@
 
 <body>
 
-    <!-- NAV -->
-    [GLOBAL NAV GOES HERE]
+<nav class="bf-nav">
+    <div class="nav-left">
+        <a href="../../index.html" class="nav-logo">BrightFoundry</a>
+    </div>
 
-    <header class="module-header">
-        <h1>Pattern Induction</h1>
-        <a class="home-btn" href="../../index.html">← Home</a>
-        <p>Discover hidden rules, structures, and relationships.</p>
-    </header>
-
-    <main class="module-container">
-        <div class="pattern-box">
-            <h2>Discover the Pattern</h2>
-            <p id="sequence-display">Loading...</p>
+    <div class="nav-right desktop-nav">
+        <div class="dropdown">
+            <span class="dropdown-toggle">Modules ▾</span>
+            <div class="dropdown-menu">
+                <a href="../pattern-induction/index.html">Pattern Induction</a>
+                <a href="../fluid-reasoning/index.html">Fluid Reasoning</a>
+                <a href="../working-memory/index.html">Working Memory</a>
+                <a href="../processing-speed/index.html">Processing Speed</a>
+                <a href="../spatial-visualization/index.html">Spatial Visualization</a>
+                <a href="../meta-cognition/index.html">Meta‑Cognition</a>
+            </div>
         </div>
 
-        <div class="input-area">
-            <label>Your answer:</label>
-            <input id="user-answer" type="text" />
-            <button id="submit-btn">Submit</button>
+        <a href="../../growth/growth.html">Growth Dashboard</a>
+        <a href="../../index.html#contact">Contact</a>
+    </div>
+
+    <div class="mobile-menu-icon" onclick="toggleMobileMenu()">☰</div>
+
+    <div id="mobile-menu" class="mobile-menu hidden">
+        <a href="../../index.html#modules">Modules</a>
+        <a href="../../growth/growth.html">Growth Dashboard</a>
+        <a href="../../index.html#contact">Contact</a>
+
+        <div class="mobile-submenu">
+            <a href="../pattern-induction/index.html">Pattern Induction</a>
+            <a href../fluid-reasoning/index.html">Fluid Reasoning</a>
+            <a href="../working-memory/index.html">Working Memory</a>
+            <a href="../processing-speed/index.html">Processing Speed</a>
+            <a href="../spatial-visualization/index.html">Spatial Visualization</a>
+            <a href="../meta-cognition/index.html">Meta‑Cognition</a>
         </div>
+    </div>
+</nav>
 
-        <p id="feedback"></p>
-        <button id="next-btn" class="hidden">Next Pattern</button>
-    </main>
+<script>
+function toggleMobileMenu() {
+    document.getElementById("mobile-menu").classList.toggle("hidden");
+}
+</script>
 
-    <script src="logic.js"></script>
+<header class="module-header">
+    <h1>Pattern Induction</h1>
+    <a class="home-btn" href="../../index.html">← Home</a>
+    <p>Discover hidden rules, structures, and relationships.</p>
+</header>
+
+<main class="module-container">
+
+    <div class="pattern-box">
+        <h2>Discover the Pattern</h2>
+        <p id="sequence-display">Loading...</p>
+    </div>
+
+    <div class="input-area">
+        <label>Your answer:</label>
+        <input id="user-answer" type="text" />
+        <button id="submit-btn">Submit</button>
+    </div>
+
+    <p id="feedback"></p>
+    <button id="next-btn" class="hidden">Next Pattern</button>
+
+</main>
+
+<script src="logic.js"></script>
 </body>
 </html>
