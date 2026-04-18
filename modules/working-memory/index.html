@@ -4,59 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Working Memory — BrightFoundry</title>
+    <link rel="stylesheet" href="../../assets/css/global.css" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-<nav class="bf-nav">
-    <div class="nav-right">
 
-    <div class="dropdown">
-        <span class="dropdown-toggle">Modules ▾</span>
-        <div class="dropdown-menu">
-            <a href="modules/pattern-induction/index.html">Pattern Induction</a>
-            <a href="modules/fluid-reasoning/index.html">Fluid Reasoning</a>
-            <a href="modules/working-memory/index.html">Working Memory</a>
-            <a href="modules/processing-speed/index.html">Processing Speed</a>
-            <a href="modules/spatial-visualization/index.html">Spatial Visualization</a>
-            <a href="modules/meta-cognition/index.html">Meta‑Cognition</a>
-        </div>
+<nav class="bf-nav">
+    <div class="nav-left">
+        <a href="../../index.html" class="nav-logo">BrightFoundry</a>
     </div>
 
-    <a href="growth/growth.html">Growth Dashboard</a>
-    <a href="#contact">Contact</a>
-</div>
+    <div class="nav-right desktop-nav">
+        <div class="dropdown">
+            <span class="dropdown-toggle">Modules ▾</span>
+            <div class="dropdown-menu">
+                <a href="../pattern-induction/index.html">Pattern Induction</a>
+                <a href="../fluid-reasoning/index.html">Fluid Reasoning</a>
+                <a href="../working-memory/index.html">Working Memory</a>
+                <a href="../processing-speed/index.html">Processing Speed</a>
+                <a href="../spatial-visualization/index.html">Spatial Visualization</a>
+                <a href="../meta-cognition/index.html">Meta‑Cognition</a>
+            </div>
+        </div>
+
+        <a href="../../growth/growth.html">Growth Dashboard</a>
+        <a href="../../index.html#contact">Contact</a>
+    </div>
+
+    <div class="mobile-menu-icon" onclick="toggleMobileMenu()">☰</div>
+
+    <div id="mobile-menu" class="mobile-menu hidden">
+        <a href="../../index.html#modules">Modules</a>
+        <a href="../../growth/growth.html">Growth Dashboard</a>
+        <a href="../../index.html#contact">Contact</a>
+
+        <div class="mobile-submenu">
+            <a href="../pattern-induction/index.html">Pattern Induction</a>
+            <a href="../fluid-reasoning/index.html">Fluid Reasoning</a>
+            <a href="../working-memory/index.html">Working Memory</a>
+            <a href="../processing-speed/index.html">Processing Speed</a>
+            <a href="../spatial-visualization/index.html">Spatial Visualization</a>
+            <a href="../meta-cognition/index.html">Meta‑Cognition</a>
+        </div>
+    </div>
 </nav>
-    <header class="module-header">
-        <h1>Working Memory</h1>
-        <a class="home-btn" href="../../index.html">← Home</a>
-        <p>Hold and manipulate information with precision.</p>
-    </header>
 
-    <main class="module-container">
+<script>
+function toggleMobileMenu() {
+    document.getElementById("mobile-menu").classList.toggle("hidden");
+}
+</script>
 
-        <div class="memory-box">
-            <h2>Memorize This</h2>
-            <p id="memory-display">Loading...</p>
-        </div>
+<header class="module-header">
+    <h1>Working Memory</h1>
+    <a class="home-btn" href="../../index.html">← Home</a>
+    <p>Hold and manipulate information with precision.</p>
+</header>
 
-        <div class="input-area hidden" id="input-area">
-            <label for="user-answer">Enter what you remember:</label>
-            <input type="text" id="user-answer" placeholder="Type here" />
-            <button id="submit-btn">Submit</button>
-        </div>
+<main class="module-container">
 
-        <p id="feedback"></p>
+    <div class="memory-box">
+        <h2>Memorize This</h2>
+        <p id="memory-display">Loading...</p>
+    </div>
 
-        <div id="reflection-box" class="reflection hidden">
-            <h3>Reflection</h3>
-            <p></p>
-        </div>
+    <div class="input-area hidden" id="input-area">
+        <label>Enter what you remember:</label>
+        <input id="user-answer" type="text" placeholder="Type here" />
+        <button id="submit-btn">Submit</button>
+    </div>
 
-        <button id="next-btn" class="hidden">Next Challenge</button>
+    <p id="feedback"></p>
 
-    </main>
+    <div id="reflection-box" class="reflection hidden">
+        <h3>Reflection</h3>
+        <p></p>
+    </div>
 
-    <script src="logic.js"></script>
+    <button id="next-btn" class="hidden">Next Challenge</button>
+
+</main>
+
+<script src="logic.js"></script>
 </body>
 </html>
